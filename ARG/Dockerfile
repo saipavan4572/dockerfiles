@@ -1,5 +1,8 @@
 ARG version
 FROM almalinux:${version:-8}
-# we have to pass the version number/name as the commandline argument.
+# we have to pass the some default version number/name and provide the required version number as the commandline argument like: version=9
 #RUN cat /etc/*release  ---> to verify the OS version details
+ARG Course=DevOps
+ARG Trainer=PSPK
+RUN echo "Course is:${Course}, Trainer is:${Trainer}"
 CMD [ "sleep","100" ]
