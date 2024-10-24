@@ -5,5 +5,5 @@ FROM almalinux:${version:-8}
 ARG Course=DevOps
 ARG Trainer=PSPK
 ENV Duration=90Hr
-RUN echo "Course is:${Course}, Trainer is:${Trainer}"
+RUN echo "Course is:${Course}, Trainer is:${Trainer}, Duration is:${Duration}"
 CMD [ "sleep","100" ]
