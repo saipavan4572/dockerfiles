@@ -4,5 +4,6 @@ FROM almalinux:${version:-8}
 #RUN cat /etc/*release  ---> to verify the OS version details
 ARG Course=DevOps
 ARG Trainer=PSPK
+ENV Duration=90Hr
 RUN echo "Course is:${Course}, Trainer is:${Trainer}"
 CMD [ "sleep","100" ]
